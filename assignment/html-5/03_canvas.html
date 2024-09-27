@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ #canvas{
+    background-color: yellow;
+ }
+ #canvas3{
+    background-color: aquamarine;
+ }
+ #canvas2{
+    background-color: blue;
+ }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="canvas" height="200" width="300" style="border: 1px solid red;"></canvas>
+    <script>
+    var canvas=document.getElementById("canvas");
+    var ctx=canvas.getContext("2d");
+    ctx.fillstyle="green";
+    ctx.fillrect(0,0,190,95);
+    </script>
+
+    <canvas id="canvas2" height="200" width="300" style="border: 1px solid red;"></canvas>
+    <script>
+    var canvas=document.getElementById("canvas2");
+    var ctx=canvas.getContext("2d");
+    ctx.moveTo(0,0);
+    ctx.lineTo(300,200);
+    ctx.stroke();
+    </script>
+
+    <canvas id="canvas3" height="400" width="300" style="border: 1px solid red;"></canvas>
+    <script>
+    var canvas=document.getElementById("canvas3");
+    var ctx=canvas.getContext("2d");
+    ctx.fillstyle="green";
+    ctx.fillrect(0,0,190,95);
+    </script>
+   
+    <canvas id="canvas5" height="200" width="300" style="border: 1px solid red;"></canvas>
+    <script>
+        function draw(){
+            var ctx=document.getElementById("canvas5").getContext("2d");
+            ctx.arc(100,100,50,0,0,1,false);
+            ctx.stroke()
+
+        }
+        window.onload=draw;
+    </script>
+</body>
+</html>
