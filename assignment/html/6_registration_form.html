@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table align="center">
+        <form action="">
+            <b><caption style="color: red;" >Emplpoyee Registration Form</caption></b>
+            <tr>
+                <td><label for=""></label></td>
+                <td><input type="radio" name="m" required>Mr.
+                <input type="radio" name="m" required>Mrs.
+                <input type="radio" name="m" required>Ms.</td>
+            </tr>
+            <tr>
+                <td><label for="">First Name</label></td>
+                <td><input type="text" placeholder="enter your first name" title="first name" required></td>
+            </tr>
+            <tr>
+                <td><label for="">last Name</label></td>
+                <td><input type="text" placeholder="enter you last name" title="last name" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Mail Address1</label></td>
+                <td><input type="email" placeholder="enter your email" title="your email" pattern="[a-z]+@+[a-z]+.+[a-z]{2,5}" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Mail Address2</label></td>
+                <td><input type="email" placeholder="enter your email" title="your email" pattern="[a-z]+@+[a-z]+.+[a-z]{2,5}" required></td>
+            </tr>
+            <tr>
+                <td><label for="">City</label></td>
+                <td><input type="text" placeholder="enter your city" title="your city" required></td>
+            </tr>
+            <tr>
+                <td><label for="">State</label></td>
+                <td><select name="" id="" required>
+                    <option value="" hidden>---select your state---</option>
+                    <option value="">Gujarat</option>
+                    <option value="">Maharastra</option>
+                    <option value="">U.P</option>
+                    <option value="">Keral</option>
+                    <option value="">Tamilnadu</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="">Zip Code</label></td>
+                <td><input type="text" maxlength="6"  placeholder="enter your zipcode"></td>
+            </tr>
+            <tr>
+                <td><label for="">Upload Photo</label></td>
+                <td><input type="file" required></td>
+            </tr>
+            <tr>
+                <td><label for="">E-mail</label></td>
+                <td><input type="email" required pattern="[a-z]+@+[a-z]+.+[a-z]{2,5}" placeholder="enter your email"></td>
+            </tr>
+            <tr>
+                <td><label for="">Mobile</label></td>
+                <td><input type="tel" maxlength="10" placeholder="enter your mobile no." required></td>
+            </tr>
+            <tr>
+            <td><label for="">Language Known</label></td>
+            <td><input type="checkbox">gujarati
+            <input type="checkbox">hindi
+            <input type="checkbox">english
+            <input type="checkbox">marathi</td>
+            </tr>
+            <tr>
+                <td><label for="">Additional Information</label></td>
+                <td><textarea name="" id="" rows="5" cols="30" required placeholder="enter your address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="">Submit</label></td>
+                <td><input type="submit" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Reset</label></td>
+                <td><input type="reset" required></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
