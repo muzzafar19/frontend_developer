@@ -3,36 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar with Logo and Dropdown</title>
+    <title>Document</title>
     <link rel="stylesheet" href="/02_navbar.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">Logo</div>
-        <div class="nav-items">
-            <div class="nav-item">Home</div>
-            <div class="nav-item">About</div>
-            <div class="nav-item dropdown">
-                Services
-                <div class="dropdown-content">
-                    <div class="dropdown-item">Web Development</div>
-                    <div class="dropdown-item">Marketing</div>
-                    <div class="dropdown-item">Wordpress</div>
-                    <div class="dropdown-item dropdown">
-                        More
-                        <div class="dropdown-content nested">
-                            <div class="dropdown-item">Html</div>
-                            <div class="dropdown-item">Css</div>
-                            <div class="dropdown-item">Javascript</div>
-                            <div class="dropdown-item">jQuery</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-item">Blogs</div>
-            <div class="nav-item">Contact Us</div>
-        </div>
-        <div class="login">Login</div>
-    </div>
+    
+       <nav>
+        <ul>
+            <li>logo</li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service
+                <ul>
+                    <li>Website Design</li>
+                    <li>Digital Marketing</li>
+                    <li>Wordpress</li>
+                    <li>More
+                        <ul>
+                            <li>Html</li>
+                            <li>Css</li>
+                            <li>Javascript</li>
+                            <li>jQuery</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Blog</li>
+            <li>Contact</li> 
+            <li>Login</li>
+        </ul>
+       </nav>
+           
+        
+    
 </body>
 </html>
