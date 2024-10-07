@@ -1,36 +1,74 @@
-body{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space between logo, nav-items, and login */
+    background-color: #333;
+    padding: 10px 20px;
+}
 
-nav ul li{
-    width: 160px;
-    height: 33px;
-    padding: 11px;
-    background-color: rgb(10, 87, 87);
+.logo {
     color: white;
-    border: 1px solid white;
-    font-size: 20px;
-    text-align: center;
-    float: left;
-    list-style-type: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center; /* Center nav items */
+    flex: 1; /* Allow nav items to take space */
+}
+
+.nav-item {
+    color: white;
+    padding: 15px;
+    position: relative;
     cursor: pointer;
 }
-nav ul li:hover{
-    background-color: rgb(16, 236, 236);
-    color: black;
+
+.dropdown {
+    position: relative;
 }
-nav ul ul{
-    margin-top: 19px;
-    margin-left: -52px;
+
+.dropdown-content {
     display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    z-index: 1;
 }
-nav ul li:hover > ul{
+
+.dropdown:hover .dropdown-content {
     display: block;
 }
-nav ul ul ul{
-    margin-left: 130px;
-    margin-top: -37px;
+
+.dropdown-item {
+    color: white;
+    padding: 12px 16px;
+}
+
+.dropdown-item:hover {
+    background-color: #555;
+}
+
+/* Nested Dropdown */
+.nested {
+    left: 100%; /* Position to the right of the parent */
+    top: 0;
+    display: none;
+    position: absolute;
+}
+
+.dropdown-item.dropdown:hover .nested {
+    display: block;
+}
+
+.login {
+    color: white;
+    padding: 15px;
+    cursor: pointer;
 }
