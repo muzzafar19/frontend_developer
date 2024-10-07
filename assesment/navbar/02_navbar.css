@@ -1,0 +1,27 @@
+nav ul li{
+    width: 200px;
+    height: 33px;
+    background-color: rgb(11, 92, 92);
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    text-align: center;
+    float: left;
+    list-style: none;
+}
+nav ul li:hover{
+    background-color: rgb(27, 235, 235);
+    color: black;
+}
+nav ul ul{
+    margin-top: 0.4cm;
+    margin-left: -1.2cm;
+    display: none;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul ul ul{
+    margin-left: 4.3cm;
+}
