@@ -1,0 +1,77 @@
+/* Default styles (Desktop) */
+/* Already defined in your existing CSS */
+
+/* Tablet Styles (768px and below) */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .h1 {
+        font-size: 48px;
+        line-height: 1.2;
+        width: 100%;
+    }
+
+    .p {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .sec1-main .row, .sec4-main .row, .sec5-main .row {
+        flex-direction: column;
+    }
+
+    .sec1-main .row .col, .sec4-main .row .col, .sec5-main .row .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        width: 250px;
+        height: 50px;
+    }
+
+    .sec1-p, .sec4-p {
+        width: 80%;
+    }
+}
+
+/* Mobile Styles (480px and below) */
+@media (max-width: 480px) {
+    .nav .logo {
+        width: 50px;
+    }
+
+    .navlist .list a {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+
+    .h1 {
+        font-size: 36px;
+        line-height: 1.1;
+    }
+
+    .p, .sec1-p, .sec4-p {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .sec1-h2, .sec5-h2 {
+        font-size: 36px;
+    }
+
+    .btn, .maintext-btn {
+        width: 200px;
+        height: 45px;
+    }
+
+    .sec5-text .sec5-h2 {
+        font-size: 40px;
+    }
+
+    .foot-p, .foot-h4, .foot-ul .foot-li a {
+        font-size: 14px;
+    }
+}

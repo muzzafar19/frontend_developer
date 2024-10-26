@@ -1,0 +1,420 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* utilities */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header start */
+#header {
+    background: url(/image/image.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav .logo {
+    width: 70px;
+}
+
+.navlist .list {
+    display: inline-block;
+}
+
+.navlist .list a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+
+}
+
+
+
+.h1 {
+    font-size: 91px;
+    line-height: 97px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Archivo";
+    width: 50%;
+    margin-top: 40px;
+}
+
+.p {
+    width: 50%;
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Nunito";
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+    width: 322px;
+    height: 65px;
+    border-radius: 32px;
+    background-color: #f64b3c;
+    margin-bottom: 40px;
+}
+
+/* header end */
+
+/* sec 1 start */
+#sec1 {
+    background: url(/image/sec1bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.sec1-h2 {
+    font-size: 64px;
+    color: #f64b3c;
+    font-weight: 700;
+    font-family: "Archivo";
+    text-align: center;
+
+}
+
+.sec1-p {
+    font-size: 25px;
+    color: #f64b3c;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    width: 50%;
+    margin: 50px auto;
+}
+
+.sec1-main .row {
+    display: flex;
+    gap: 20px;
+}
+
+.sec1-main .row .col {
+    width: 33.33%;
+}
+
+.card {
+    padding: 20px;
+}
+
+.card .img {
+    width: 50%;
+
+}
+
+.card-text {
+    color: #f64b3c;
+    text-align: center;
+}
+
+.card-text .card-h4 {
+    font-size: 33px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Archivo";
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.card-text .card-p {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Nunito";
+    margin-bottom: 50px;
+
+}
+
+/* sec 2 start */
+#sec2 {
+    background: url(/image/sec2bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#sec2 .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec2 .row .col {
+    padding: 20px;
+    width: 50%;
+}
+
+#sec2 .h2 {
+    font-size: 75px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Archivo";
+}
+
+#sec2 .p {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Nunito";
+    width: 90%;
+}
+
+#sec2 .btn {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #f64b3c;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+    width: 322px;
+    height: 65px;
+    border-radius: 32px;
+    background-color: #ffffff;
+    margin-top: 30px;
+}
+
+#sec2 .img {
+    width: 90%;
+    margin: 70px 0;
+}
+
+/* sec 3 start */
+#sec3 {
+    background: url(/image/sec3bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#sec3 .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sec3 .row .col {
+    padding: 20px;
+    width: 50%;
+}
+
+#sec3 .h2 {
+    font-size: 75px;
+    color: #f64b3c;
+    font-weight: 700;
+    font-family: "Archivo";
+}
+
+#sec3 .p {
+    font-size: 30px;
+    color: #f64b3c;
+    font-weight: 400;
+    font-family: "Nunito";
+    width: 90%;
+    margin-bottom: 60px;
+}
+
+#sec3 .img {
+    width: 90%;
+    margin: 70px 0;
+}
+
+/* sec 4 start */
+#sec4 {
+    background: url(/image/sec2bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#sec4 .sec4-h2 {
+    font-size: 62px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Archivo";
+    text-align: center;
+
+}
+
+#sec4 .sec4-p {
+    width: 50%;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    margin: 30px auto
+}
+
+.sec4-main .row {
+    display: flex;
+
+}
+
+.sec4-main .row .col {
+    width: 33.33%;
+}
+
+.card {
+    padding: 20px;
+    margin: 50px;
+}
+
+.card .img {
+    width: 30%;
+
+
+}
+
+/* sec 5 start */
+
+#sec5 {
+    background: url(/image/sec5bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.sec5-text .sec5-h2 {
+    font-size: 75px;
+    color: #f64b3c;
+    font-weight: 700;
+    font-family: "Archivo";
+    text-align: center;
+    margin: 40px auto;
+}
+
+.sec5-main .row {
+    display: flex;
+    gap: 20px;
+}
+
+.sec5-main .row .col {
+    width: 33.33%;
+}
+
+.sec5-main .img {
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+/* sec 6 start */
+#sec6 {
+    background: url(/image/sec6bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#sec6 .maintext {
+    color: #ffffff;
+    text-align: center;
+}
+
+#sec6 .maintext .maintext-h1 {
+    font-size: 75px;
+    font-weight: 700;
+    font-family: "Archivo";
+    margin: 30px auto;
+
+}
+
+#sec6 .maintext .maintext-p {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Nunito";
+    margin: 40px auto;
+    width: 50%;
+}
+
+#sec6 .maintext .maintext-btn {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #f64b3c;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+    width: 322px;
+    height: 65px;
+    border-radius: 32px;
+    background-color: #ffffff;
+    margin-top: 30px;
+}
+#sec6 .maintext .input{
+    width: 50%;
+    height: 50px;
+    border-radius: 32px;
+    margin-bottom: 40px ;
+    border: none;
+}
+/* sec 7 start */
+#foot {
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+    font-family: "Montserrat";
+}
+
+#foot .row {
+    display: flex;
+}
+
+#foot .row .col-40 {
+    width: 40%;
+    padding: 15px;
+}
+
+#foot .foot-p {
+    font-size: clamp(16px, 3vw, 23px);
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+#foot .row .col-60 {
+    width: 60%;
+
+}
+
+#foot .col-60 .col {
+    width: 33.33%;
+    padding: 15px;
+}
+
+#foot .foot-h4 {
+    font-size: clamp(16px, 3.5vw, 32px);
+    font-weight: 400;
+}
+
+#foot .foot-ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+#foot .foot-ul .foot-li {
+    margin: 5px 0;
+}
+
+#foot a {
+    text-decoration: none;
+    color: white;
+    font-size: clamp(16px, 3vw, 23px);
+    font-weight: 400;
+}
+/* sec 7 end */
