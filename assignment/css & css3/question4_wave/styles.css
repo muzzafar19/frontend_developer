@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+.team-section {
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: #3e2723;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.section-description {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+/* Wave Line Container */
+.wave-line-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 300px;
+}
+
+/* SVG Wave Line styling */
+.wave-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* Team Member Profile styling */
+.team-member {
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.team-member img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #FF6F61;
+}
+
+.team-member h3 {
+    margin: 8px 0 3px;
+    font-size: 0.9rem;
+    color: #FF6F61;
+}
+
+.team-member p {
+    font-size: 0.8rem;
+    color: #ccc;
+}

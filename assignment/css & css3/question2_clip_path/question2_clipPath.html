@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/bb308edeff.js" crossorigin="anonymous"></script>
+
+    <!-- intarnal css  -->
+    <style>
+        /* universal selectore */
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            position: relative;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        /* main container */
+
+        .container {
+            width: 100%;
+            position: relative;
+        }
+
+
+        /* clip path div css */
+        .main {
+            clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 87%, 0% 70%);
+            background-image: url(/question2_clip_path/pexels-jan-van-der-wolf-11680885-28733288.jpg);
+            background-size: 100% 100%;
+            padding-bottom: 50px;
+
+
+
+        }
+
+        /* icon absoluate to it's parent's div */
+        .icon {
+            position: absolute;
+            top: 82%;
+            left: 50%;
+            background-color: rgba(139, 117, 19, 0.553);
+            border-radius: 50%;
+            padding: 10px;
+            transform: translateX(-50%);
+            z-index: 99;
+            color: rgb(58, 58, 59);
+            font-size: 2rem;
+
+
+        }
+
+
+        /* text div */
+        .sect1 {
+            text-align: center;
+            padding: 80px;
+            position: relative;
+            height: 100%;
+        }
+
+
+
+        /* body div css */
+        .body {
+            width: 80%;
+            margin: auto;
+
+        }
+
+
+
+        /* navbar css */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo{
+            font-size:clamp(30px,2vw,70px);
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            display: inline-block;
+            padding: 0px 7px;
+            font-size: 20px;
+            position: relative;
+        }
+
+
+        /* for the navbar hover effect */
+        ul li::after {
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 0%;
+            background-color: rgb(23, 190, 79);
+            bottom: -3px;
+            left: 2px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        ul li:hover {
+            color: rgb(76, 80, 77);
+        }
+
+        ul li:hover::after {
+            width: 90%;
+        }
+
+        .sect1 {
+            text-align: center;
+            padding: 80px;
+            height: 100%;
+        }
+
+        h3 {
+            font-size:clamp(16px,1.5,24px);
+        }
+
+        h1 {
+            font-size:clamp(26px,7vw,60px);
+            margin-block: 20px;
+        }
+
+        p {
+            font-size:clamp(16px,1.5vw,30px);
+            width: 60%;
+            margin: auto;
+            margin-block: 30px;
+        }
+
+        button {
+            padding: 8px 15px;
+            font-size:clamp(16px,1.8vw,35px);
+            outline: none;
+            background-color: rgb(72, 75, 72);
+            border: none;
+            color: white;
+            border-radius: 6px;
+            margin-block: 80px;
+        }
+
+
+
+        /* median query css for the reponsive */
+        @media only screen and (max-width:900px) {
+            .sect1 p {
+                width: 80%;
+            }
+            
+        }
+
+
+
+
+        /* for the tablate screen */
+        @media only screen and (max-width:768px) {
+            .main {
+                width: 100%;
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+            }
+            
+            ul {
+                display: none;
+            }
+
+            .sect1 {
+                width: 100%;
+            }
+
+            .sect1 p , .sect1 h1 ,.sect1 h3{
+                width: 100%;
+                
+            }
+            nav{
+                justify-content: center;
+                text-align: center;
+            }
+
+            .body {
+                width: 100%;
+            }
+
+            button {
+                margin-block: 10px;
+                /* padding: 0; */
+
+            }
+
+            .btn2 {
+                margin-bottom: 50px;
+            }
+
+            .icon {
+                display: none;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <!-- main container -->
+    <div class="container">
+
+
+        <!-- clip path div -->
+        <div class="main">
+
+            <!-- 80% of parent div -->
+            <div class="body">
+
+                <!-- navbar  -->
+                <nav>
+                    <div class="logo">Malek Muzzafar</div>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Help</li>
+                        <li>Login</li>
+                    </ul>
+
+                </nav>
+
+
+                
+                <!-- sect 1  -->
+                <div class="sect1">
+                    <h3>Our client Our first priority</h3>
+                    <h1>Welcome to sky</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio inventore perferendis labore
+                        accusamus suscipit at consectetur impedit accusantium et omnis.
+
+                    </p>
+                    <button class="btn1">Get Start Now</button>
+                    <button class="bnt2">Learn More</button>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- this is google icon div -->
+        <div class="icon"> <i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+    </div>
+</body>
+
+</html>

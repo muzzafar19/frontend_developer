@@ -1,0 +1,58 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+    overflow: hidden;
+}
+
+.eclipse-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+/* Sun Styling */
+.sun {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #ffdd55, #ff9900);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 30px rgba(255, 153, 0, 0.7), 0 0 80px rgba(255, 153, 0, 0.5);
+}
+
+/* Moon Styling */
+.moon {
+    width: 200px;
+    height: 200px;
+    background: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    animation: eclipse 5s infinite linear;
+}
+
+/* Eclipse Animation */
+@keyframes eclipse {
+    0% {
+        left: -200px;
+    }
+    50% {
+        left: 0;
+    }
+    100% {
+        left: 200px;
+    }
+}

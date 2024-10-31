@@ -1,0 +1,70 @@
+
+/* universal selectore */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* flex container */
+.container{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+/* flex box for btn */
+.btn{
+    display: flex;
+    gap: 20px;
+    
+}
+
+
+.btn button{
+    width: 25%;
+    
+}
+
+
+/* tag name selectore */
+p{
+  padding-block: 10px;
+}
+.btn2{
+    margin-block: 12px;
+    padding-block:4px ;
+}
+
+.box{
+    background-color: cornflowerblue;
+    padding: 20px;
+    width: 33.33%;
+    border-radius: 7px;
+    border: 2px solid;
+}
+
+
+
+/* media query  for tablate */
+@media only screen and (max-width:768px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+    justify-content:center ;
+
+    }
+    .box{
+        width: 80%;
+    }
+}
+
+
+
+/* this is for mobile screen */
+@media only screen and (max-width:600px){
+    .btn{
+        gap: 3px;
+    }
+}
