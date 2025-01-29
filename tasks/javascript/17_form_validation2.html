@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<form action="">
+
+<div>
+    <label for="">name</label>
+    <input type="text" placeholder="enter your name" id="name" onblur="return validate(name,nameerr)">
+    <span id="nameerr"></span>
+</div>
+<div>
+    <label for="">number</label>
+    <input type="tel" placeholder="enter your number" id="number" onblur="return validate(number,numbererr)">
+    <span id="numbererr"></span>
+</div>
+<div>
+    <label for="">email</label>
+    <input type="email" placeholder="enter your email" id="email" onblur="return validate(email,emailerr)">
+    <span id="emailerr"></span>
+</div>
+<div>
+    <label for="">password</label>
+    <input type="password" placeholder="enter your password" id="password" onblur="return validate(password,passworderr)">
+    <span id="passworderr"></span>
+</div>
+<div>
+    <label for="">confirm password</label>
+    <input type="password" placeholder="enter your confirm pass" id="cpassword" onblur="return validate(cpassword,cpassworderr)">
+    <span id="cpassworderr"></span>
+</div>
+<div>
+    <input type="submit">
+</div>
+
+</form>
+
+
+
+<script>
+
+function validate(inp,err){
+    if(inp.value == "" || inp.value == null){
+        err.innerText = "please feil all Data!!!";
+        err.style.color = "red";
+        inp.style.border = "2px red solid";
+        return false;
+    }
+    else{
+        err.innerText = "";
+        inp.style.border = "2px green solid";
+    }
+
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightgray;
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+        input{
+            width: 50%;
+            padding: 10px;
+            border: 1px black solid;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+<h1 style="text-align: center; border-bottom: 5px red solid;">Form Validation Task</h1>
+
+    <form action="" onsubmit=" return validation()" style="text-align: center;">
+
+        <div>
+            <label for="">Name</label>
+            <input type="text" placeholder="your name" id="name">
+            <span id="nameerr"></span>
+        </div>
+        <div>
+            <label for="">Number</label>
+            <input type="tel" placeholder="your number" id="number">
+            <span id="numbererr"></span>
+        </div>
+        <div>
+            <label for="">Email</label>
+            <input type="email" placeholder="your email" id="email">
+            <span id="emailerr"></span>
+        </div>
+        <div>
+            <label for="">password</label>
+            <input type="password" placeholder="your password" id="password">
+            <span id="passworderr"></span>
+        </div>
+        <div>
+            <label for="">confirm pass</label>
+            <input type="password" placeholder="confirm pass" id="cpassword">
+            <span id="cpassworderr"></span>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+
+
+</body>
+
+
+<script>
+
+    let name = document.getElementById("name")
+    let nameerr = document.getElementById("nameerr")
+    let number = document.getElementById("number")
+    let numbererr = document.getElementById("numbererr")
+    let email = document.getElementById("email")
+    let emailerr = document.getElementById("emailerr")
+    let password = document.getElementById("password")
+    let passworderr = document.getElementById("passworderr")
+    let cpassword = document.getElementById("cpassword")
+    let cpassworderr = document.getElementById("cpassworderr")
+
+
+    console.log(name)
+
+
+
+    function validation() {
+
+        if (name.value == "" || name.value == null) {
+            nameerr.innerText = "please enter your name"
+            nameerr.style.color = "red"
+            return false
+        }
+        else {
+            nameerr.innerText = ""
+        }
+        if (number.value == "" || number.value == null) {
+            numbererr.innerText = "please enter your number"
+            numbererr.style.color = "red"
+            return false
+        }
+        else {
+            numbererr.innerText = ""
+        }
+        if (email.value == "" || email.value == null) {
+            emailerr.innerText = "please enter your email"
+            emailerr.style.color = "red"
+            return false
+        }
+        else {
+            emailerr.innerText = ""
+        }
+        if (password.value == "" || password.value == null) {
+            passworderr.innerText = "please enter your password"
+            passworderr.style.color = "red"
+            return false
+        }
+        else {
+            passworderr.innerText = ""
+        }
+        if (cpassword.value !== password.value) {
+            cpassworderr.innerText = "password wrong!!!"
+            cpassworderr.style.color = "red"
+            alert("password dosen't match !!!")
+            return false
+        }
+    }
+</script>
+
+</html>

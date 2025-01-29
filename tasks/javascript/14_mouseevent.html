@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1 id="h1" onmouseenter="changename()" onmouseleave="removename()">hello this is malek muzzafar!</h1>
+
+
+    <button onclick="changename()">change name</button>
+    <button onclick="removename()">remove name</button>
+
+
+
+    <script>
+let h1 = document.getElementById("h1")
+
+
+function changename(){
+    h1.innerText = "this is javascript!"
+    h1.style.background = "red";
+    h1.style.transition = ".1s";
+}
+
+function removename(){
+    h1.innerText = "this is javascript expert!"
+    h1.style.background = "blue"
+
+}
+
+    </script>
+
+</body>
+</html>

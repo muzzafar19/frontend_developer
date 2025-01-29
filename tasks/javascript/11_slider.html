@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Slider</title>
+    <style>
+        .main {
+            height: 500px;
+            width: 100%;
+
+        }
+
+        button {
+            margin-top: 20px;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="main">
+        <img src="/image/img1.jpg" alt="" height="100%" width="100%" id="img">
+    </div>
+
+    <button onclick="slider()">change image</button>
+
+
+    <script>
+
+        let img_tag = document.getElementById("img")
+        console.log(img_tag)
+        console.log(img_tag.src)
+
+        function slider() {
+            if (img_tag.src.match("/image/img1.jpg")) {
+                img_tag.src = "/image/img2.jpg";
+            }
+            else if (img_tag.src.match("/image/img2.jpg")) {
+                img_tag.src = "/image/img3.jpg";
+            }
+            else if (img_tag.src.match("/image/img3.jpg")) {
+                img_tag.src = "/image/img4.jpg";
+            }
+            else if (img_tag.src.match("/image/img4.jpg")) {
+                img_tag.src = "/image/img5.jpg";
+            }
+            else if (img_tag.src.match("/image/img5.jpg")) {
+                img_tag.src = "/image/img6.jpg";
+            }
+            else if (img_tag.src.match("/image/img6.jpg")) {
+                img_tag.src = "/image/img7.jpg";
+            }
+            else {
+                img_tag.src = "/image/img1.jpg";
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

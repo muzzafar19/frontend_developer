@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .stylesheet {
+            background-color: red;
+            color: white;
+            border: 5px dotted blue;
+            border-radius: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+            font-weight: 600px;
+            padding: 50px;
+            margin: 0% auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="h1">hello this is malek muzzafar!</h1>
+    <button onclick="changecss()">change css</button>
+   <button onclick="removecss()">remove css</button>
+   <button onclick="togglecss()">toggle button</button>
+
+    <script>
+        let h1 = document.getElementById("h1");
+
+        function changecss() {
+            h1.classList.add("stylesheet");
+        }
+
+        function removecss(){
+            h1.classList.remove("stylesheet");
+        }
+
+        function togglecss(){
+            h1.classList.toggle("stylesheet")
+        }
+
+    </script>
+
+</body>
+
+</html>
