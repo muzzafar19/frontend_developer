@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // <!-- 1. Array inside an Array (Nested Arrays) -->
+        let nestedArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+        console.log(nestedArray[0][2]); // Output: 3
+
+        console.log(nestedArray[1][2]); // Output: 6
+        console.log(nestedArray[2][2]); // Output: 9
+
+
+
+
+        
+        // 2. Object inside an Object (Nested Objects)
+        let nestedObject = {
+            person: {
+                name: "John",
+                age: 30,
+                address: {
+                    city: "New York",
+                    zip: "10001"
+                }
+            }
+        };
+        console.log(nestedObject.person.address.city); // Output: New York
+
+
+
+        // 3. Array inside an Object
+        let arrayInObject = {
+            name: "Alice",
+            hobbies: ["Reading", "Gaming", "Traveling"]
+        };
+        console.log(arrayInObject.hobbies[1]); // Output: Gaming
+
+
+
+        // 4. Object inside an Array
+        let objectInArray = [
+            { name: "Tom" },
+            { name1: "Jerry" },
+            { name2: "ffff" }
+
+        ];
+        console.log(objectInArray[1].name1); 
+
+    </script>
+</body>
+
+</html>
