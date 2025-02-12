@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Note App</title>
+    <link rel="stylesheet" href="/index.css">
+    <style>
+        .main {
+            height: 350px;
+            width: 350px;
+            border: 1px solid;
+            margin: 0% auto;
+            margin-top: 70px;
+            border-radius: 10px;
+            background: #7432f8;
+            box-shadow: 10px 10px 5px black;
+            
+        }
+
+        input {
+            margin-top: 10px;
+            margin-left: 30px;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+
+        }
+
+        button {
+            margin-left: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+           background-color: #fff;
+           color: black;
+        }
+        button:hover{
+            background-color: black;
+            color: #fff;
+        }
+        ul{
+            color: white;
+        }
+        h1:hover{
+            color: white;
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <h1 style="text-align: center;">Todo List</h1>
+        <input id="text" type="text" placeholder="Enter Your Thoughts">
+        <button id="addBtn">Add Me</button>
+        <ul id="list"></ul> <!-- To display added items -->
+    </div>
+
+    <script>
+
+        var textInput = document.getElementById("text");
+        var addButton = document.getElementById("addBtn");
+        var list = document.getElementById("list");
+
+
+        function addText() {
+            var userInput = textInput.value.trim();
+            if (userInput !== "") {
+                var listItem = document.createElement("li");
+                listItem.textContent = userInput;
+                list.appendChild(listItem);
+                textInput.value = "";
+            } else {
+                alert("Please enter some text!");
+            }
+        }
+
+
+        addButton.addEventListener("click", addText);
+
+    </script>
+</body>
+
+</html>
