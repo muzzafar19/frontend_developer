@@ -1,0 +1,70 @@
+/* Main container */
+.main {
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    margin: 50px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: blue;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Input field */
+input {
+    width: 70%;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Add button */
+button {
+    border-radius: 5px;
+    padding: 10px;
+    width: 70px;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Task list styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 250px;
+    overflow-y: auto; /* Scrollable task list */
+}
+
+/* Individual task item */
+.task-item {
+    background: white;
+    color: black;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+/* Delete button */
+.delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+}

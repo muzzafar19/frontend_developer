@@ -1,0 +1,57 @@
+{
+    "user":[
+        {
+            "id":1,
+            "name":"John Doe",
+            "course":"Computer Science"
+        },
+        {
+            "id":2,
+            "name":"John Doe",
+            "course":"Computer Science"
+        },
+        {
+            "id":3,
+            "name":"John Doe",
+            "course":"Computer Science"
+        },
+        {
+            "id":4,
+            "name":"John Doe",
+            "course":"Computer Science"
+        },
+        {
+            "id":5,
+            "name":"John Doe",
+            "course":"Computer Science"
+        }
+    ],
+    "admin":[
+        {
+            "id":1,
+            "name":"John Doe",
+            "email":"jhon@gmail.com"
+        },
+        {
+            "id":2,
+            "name":"John Doe",
+            "email":"jhon@gmail.com"
+        },
+        {
+            "id":3,
+            "name":"John Doe",
+            "email":"jhon@gmail.com"
+        },
+        {
+            "id":4,
+            "name":"John Doe",
+            "email":"jhon@gmail.com"
+        },
+        {
+            "id":5,
+            "name":"John Doe",
+            "email":"jhon@gmail.com"
+        }
+    ]
+    
+}

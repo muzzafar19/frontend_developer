@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- one parent and multiple child is hyrachical inheritance  -->
+
+
+    <script>
+
+        class parent {
+            a() {
+                console.log("parent class");
+            }
+        }
+        class chiild1 extends parent {
+            b() {
+                console.log("child1 class");
+            }
+        }
+        class child2 extends parent {
+            c() {
+                console.log("child2 class");
+            }
+        }
+
+        let obj = new chiild1();
+        obj.b();
+        obj.a();
+
+
+        let obj1 = new child2();
+        obj1.c();
+        obj1.a();
+        
+    </script>
+</body>
+
+</html>

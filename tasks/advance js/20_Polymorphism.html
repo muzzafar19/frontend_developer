@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+        // 1) method overloading
+        //   one class same function name with diffrent parameter
+
+        class a {
+            add() {
+                console.log("no parameter");
+            }
+            add(a) {
+                console.log("one parameter");
+            }
+            add(a, b) {
+                console.log("two parameter");
+            }
+        }
+        let obj = new a();
+        obj.add();
+
+        // result :- two parameter 
+        //  reason :- js does not support method overloading
+        // js only support last function
+        //  so last function is two parameter
+        //  so output is two parameter
+
+
+
+
+        // 2) method overriding
+        // different class same function name with different parameter
+
+
+        class b{
+            add(){
+                console.log("no parameter");
+            }
+        }
+        class c extends b{
+            add(a){
+                console.log("one parameter");
+            }
+        }
+        class d extends c{
+            add (a,b){
+                console.log("two parameter");
+            }
+        }
+
+        let obj1 = new d();
+        obj1.add();
+
+        
+        // result :- two parameter
+        // reason :- js does not support method overriding
+        // js only support last function
+        //  so last function is two parameter
+        //  so output is two parameter
+    </script>
+
+
+</body>
+
+</html>

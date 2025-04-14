@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        class a {
+            x() {
+                console.log("this is x function")
+            }
+            y() {
+                console.log("this is y function")
+            }
+        }
+        class b extends a {
+            z() {
+                console.log("this is z function")
+            }
+        }
+        class c extends b {
+            w() {
+                console.log("this is w function")
+            }
+        }
+
+
+        let obj = new c();
+        console.log(obj);
+        obj.w();
+        obj.z();
+        obj.x();
+        obj.y();
+    </script>
+</body>
+
+</html>

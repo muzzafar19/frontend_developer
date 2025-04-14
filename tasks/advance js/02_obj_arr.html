@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- array :- collection of multiple values store in single varibale [] ,index 0 -->
+
+
+
+    <script>
+
+
+        // array in array
+        let arr = [1, 2, 3, [4, 4, 6], 7, 8, 9, 10];
+        console.log(arr)
+        console.log(arr[3][2])
+        console.log(arr[3][1])
+        console.log([3][0])
+
+
+
+        //  object in object
+        let obj = {
+            name: "malek",
+            age: 21,
+            address: {
+                city: "ahemedabad",
+                zip: 382435,
+                state: "gujarat",
+            }
+
+        }
+
+        console.log(obj)
+        console.log(obj.address)
+        console.log(obj.address.city)
+        console.log(obj.address.state)
+        console.log(obj.address.zip)
+
+
+        // object in array
+        let arr1 = [1, 2, 3, 4, 5, {
+            name: "muzzafar",
+            age: 21,
+            address: {
+                city: "surat",
+                zip: 382453,
+                state: "gujarat",
+            }
+        }]
+
+        console.log(arr1)
+        console.log(arr1[5])
+        console.log(arr1[5].address)
+        console.log(arr1[5].address.state)
+        console.log(arr1[5].address.city)
+        console.log(arr1[5].address.zip)
+
+        // array in object
+
+        let obj1 = {
+            name: "tosif",
+            age: 19,
+            address: ["ahmedabad", 382435, "gujarat"]
+        }
+
+
+        console.log(obj1)
+        console.log(obj1.address)
+        console.log(obj1.address[0])
+        console.log(obj1.address[1])
+        console.log(obj1.address[2])
+    </script>
+</body>
+
+</html>

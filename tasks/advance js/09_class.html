@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- class :- collection of member function and data memeber (varible) . data 
+    class ;- blue print of object  -->
+
+    <!-- syntax ;- 
+    class class-name{
+        memebr function(){
+            data member 
+        }
+    }
+    let data = new class-name
+    data. -->
+
+    <script>
+
+        class bank {
+            // member function
+            x = function details(pin, balance) {
+                // data member
+                let bankname = "SBI";
+                let ifsc = "SBIN0001";
+                let pinnumber = pin;
+                let balancedata = balance;
+
+                console.log(pinnumber);
+                console.log(balancedata);
+                console.log(bankname);
+                console.log(ifsc);
+
+            }
+            y = function cash(balance) {
+                console.log("remaining balance is = " + balance)
+            }
+        }
+
+        let zafar = new bank();
+        console.log(zafar)
+        zafar.x(1922, 100000000)
+
+
+        zafar.y(100000000)
+
+    </script>
+</body>
+
+</html>
