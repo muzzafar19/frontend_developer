@@ -1,20 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Simple Todo List</title>
 </head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+  }
+
+  h2 {
+    color: #333;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+  }
+
+  button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  p{
+    margin-top: 400px;
+  }
+  p:hover{
+    color: #0056b3;
+    cursor: pointer;
+  }
+</style>
 <body>
 
-    <div class="main">
-        <h1>Todo List</h1>
-        <input type="text" id="taskInput" placeholder="Add Your Task">
-        <button id="addTask">Add</button>
-        <ul id="taskList"></ul>
-    </div>
+  <h2>Todo List</h2>
 
-    <script src="script.js"></script>
+  <input type="text" id="taskInput" placeholder="Enter a task" />
+  <button onclick="addTask()">Add Task</button>
+  <button onclick="clearTasks()">Clear</button>
+
+  <ul id="taskList"></ul>
+
+  <p>`Malek Muzzafar`</p>
+
+  <script>
+    function addTask() {
+      const input = document.getElementById('taskInput');
+      const task = input.value.trim();
+
+      if (task !== '') {
+        const li = document.createElement('li');
+        li.textContent = task;
+        document.getElementById('taskList').appendChild(li);
+        input.value = '';
+      }
+    }
+
+    function clearTasks() {
+      document.getElementById('taskList').innerHTML = '';
+    }
+  </script>
+
 </body>
 </html>
