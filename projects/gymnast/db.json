@@ -1,0 +1,112 @@
+{
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "malek",
+      "email": "malek@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "2",
+      "name": "tosif",
+      "email": "tosif@gmail.com",
+      "password": "5678"
+    }
+  ],
+  "team": [
+    {
+      "id": "1747476062662",
+      "image": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnBlQXCM_JKwQbU9B3h5BoTWSi2u9JKFtPwg&s"
+      ],
+      "name": [
+        "ARNOLD"
+      ],
+      "desc": [
+        "arnold is gym coach"
+      ]
+    },
+    {
+      "id": "1747476180498",
+      "image": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGmmuJ2D_Pe4sd0kou-mUUBGeG3JY5bGND2A&s"
+      ],
+      "name": [
+        "RAMBO"
+      ],
+      "desc": [
+        "rambo is boxing coach"
+      ]
+    },
+    {
+      "id": "1747476238782",
+      "image": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSywl6kZ1DBENTr6AIaEv7i0IqhUICQfo_PsQ&s"
+      ],
+      "name": [
+        "MUHAMMAD ALI"
+      ],
+      "desc": [
+        "muhammad ali is a world champion"
+      ]
+    },
+    {
+      "id": "1747720651266",
+      "image": [
+        "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/j_cena.png"
+      ],
+      "name": [
+        "JHON CENA"
+      ],
+      "desc": [
+        "WWE world heavy weight champion"
+      ]
+    }
+  ],
+  "class": [
+    {
+      "id": "1",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9xDzLxcoh9fmth4lCaSjsCsbZUM2Jqu1NxQ&s",
+      "title": "BOXING CLASS",
+      "desc": "boxing is a good sport",
+      "button": "ENROLL NOW"
+    },
+    {
+      "id": "2",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBeQLFKvLP6acgC3h9uk4slK0XBdZEXb8YIw&s",
+      "title": "YOGA CLASS",
+      "desc": "yoga is a good sport",
+      "button": "ENROLL NOW"
+    },
+    {
+      "id": "3",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_fhBIdJ_V5DsLPxjk83IniWhgVfeHPt8mgQ&s",
+      "title": "GYMNASTIC CLASS",
+      "desc": "gymnastic is a good sport",
+      "button": "LIMITED SEATS"
+    },
+    {
+      "id": "1747583129587",
+      "logo": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc8pihgnCJIPOSk8TwvTYVQMyLZqwW7HgRHg&s"
+      ],
+      "title": [
+        "swiming"
+      ],
+      "desc": [
+        "newly open  for childrens..."
+      ],
+      "button": [
+        "SUMMER OFFER"
+      ]
+    }
+  ]
+}
