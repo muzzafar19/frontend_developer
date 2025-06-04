@@ -12,6 +12,7 @@ import Classmanage from './Admin/Pages/Classmanage'
 import Teammanage from './Admin/Pages/Teammanage'
 import Teamadd from './Admin/Pages/Teamadd'
 import Classadd from './Admin/Pages/Classadd'
+import Alogin from './Admin/Pages/Alogin'
 
 
 function App() {
@@ -20,29 +21,29 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <Routes>
-        {/* user side routing */}
-        <Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/class' element={<Class/>}/>
-        <Route path='/feature' element={<Feature/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-        <Route path='/bloggrid' element={<Bloggrid/>}/>
-        <Route path='/blogdetail' element={<Blogdetail/>}/>
+        <Routes>
+          {/* user side routing */}
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/class' element={<Class />} />
+          <Route path='/feature' element={<Feature />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/bloggrid' element={<Bloggrid />} />
+          <Route path='/blogdetail' element={<Blogdetail />} />
 
 
-        {/* admin side routing */}
-        <Route path='/dash' element={<Dashboard/>}/>
-        <Route path='/classmanage' element={<Classmanage/>}/>
-        <Route path='/teammanage' element={<Teammanage/>}/>
-        <Route path='/teamadd' element={<Teamadd/>}/>
-        <Route path='/classadd' element={<Classadd/>}/>
-      
-      </Routes>
+          {/* admin side routing */}
+          <Route path='/dash' element={<Dashboard />} />
+          <Route path='/classmanage' element={<Classmanage />} />
+          <Route path='/teammanage' element={<Teammanage />} />
+          <Route path='/teamadd' element={<Teamadd />} />
+          <Route path='/classadd' element={<Classadd />} />
+          <Route path='/alogin' element={<Alogin />} />
+
+        </Routes>
       </BrowserRouter>
     </>
   )
 }
 
 export default App
- 
