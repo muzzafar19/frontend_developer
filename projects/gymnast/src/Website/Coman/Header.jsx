@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-function Header() {
+function Header({ loggedInUser }) {
     return (
         <div>
             {/* Navbar Start */}
@@ -19,6 +19,14 @@ function Header() {
                             <NavLink to="/about" className="nav-item nav-link">About Us</NavLink>
                             <NavLink to="/feature" className="nav-item nav-link">Our Features</NavLink>
                             <NavLink to="/class" className="nav-item nav-link">Classes</NavLink>
+                            {!loggedInUser ? (
+                                <>
+                                    <NavLink to="/register" className="nav-item nav-link">Register</NavLink>
+                                    <NavLink to="/login" className="nav-item nav-link">Login</NavLink>
+                                </>
+                            ) : (
+                                <span style={{fontSize:"20px", color:"white",}}>{loggedInUser.name}</span>
+                            )}
                             <div className="nav-item dropdown">
                                 <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                                 <div className="dropdown-menu text-capitalize">

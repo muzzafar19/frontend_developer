@@ -3,7 +3,7 @@ import Coheader from '../Coman/Coheader'
 import Header from '../Coman/Header'
 import axios from 'axios'
 
-function Home() {
+function Home({loggedInUser}) {
 
 
     // class
@@ -42,7 +42,7 @@ function Home() {
     return (
         <div>
             <div>
-                <Header />
+                <Header loggedInUser={loggedInUser}/>
                 {/* Carousel Start */}
                 <div className="container-fluid p-0">
                     <div id="blog-carousel" className="carousel slide" data-ride="carousel">
